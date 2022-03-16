@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerWalk();
     }
-
+    //function to make the player walk
     void PlayerWalk()
     {
         float h = Input.GetAxisRaw("Horizontal");
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         //Speed is the parameter from animator tab
         //We need to casting the float variable to an integer value
     }
-    
+    //function to change direction of character
     void ChanDirection(int direction)
     {
         Vector3 tempScale = transform.localScale;
