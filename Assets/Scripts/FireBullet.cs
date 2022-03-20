@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireBullet : MonoBehaviour
 {
+    // variable to define bullet speed
     private float speed = 10f;
     private Animator anim;
 
@@ -22,7 +23,7 @@ public class FireBullet : MonoBehaviour
     {
         Move();
     }
-
+    //function to declare bullet direction
     void Move() {
         Vector3 temp = transform.position;
         temp.x += speed * Time.deltaTime;
